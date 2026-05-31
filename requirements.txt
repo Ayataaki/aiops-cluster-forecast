@@ -1,0 +1,45 @@
+# ── Core Data Science ───────────────────────────────────────────────
+numpy==1.26.4
+pandas==2.2.2
+scipy==1.13.0
+
+# ── Time Series & Statistics ─────────────────────────────────────────
+statsmodels==0.14.2
+pmdarima==2.0.4
+arch==6.3.0                  # ADF / KPSS tests complement
+
+# ── Machine Learning ─────────────────────────────────────────────────
+scikit-learn==1.4.2
+xgboost==2.0.3
+
+# ── Deep Learning ────────────────────────────────────────────────────
+torch==2.3.0
+# neuralforecast contains Informer, Autoformer, PatchTST out-of-the-box
+neuralforecast==1.7.3
+
+# ── Visualisation ────────────────────────────────────────────────────
+matplotlib==3.8.4
+seaborn==0.13.2
+plotly==5.22.0
+
+# ── API layer ────────────────────────────────────────────────────────
+fastapi==0.111.0
+uvicorn[standard]==0.29.0
+pydantic==2.7.1
+
+# ── Data I/O ─────────────────────────────────────────────────────────
+pyarrow==16.0.0
+google-cloud-bigquery==3.23.1
+google-cloud-storage==2.16.0
+requests==2.31.0
+
+# ── Metrics & Evaluation ─────────────────────────────────────────────
+optuna==3.6.1                # Hyper-parameter tuning
+
+# ── Utilities ────────────────────────────────────────────────────────
+python-dotenv==1.0.1
+tqdm==4.66.2
+joblib==1.4.2
+loguru==0.7.2
+pytest==8.2.0
+httpx==0.27.0                # For FastAPI test client
