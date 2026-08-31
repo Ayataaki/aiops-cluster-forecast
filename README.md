@@ -291,26 +291,6 @@ before the actual load arrives.
 
 ---
 
-## 👤 Contributions
+## Contributions
 
-### Aya TAKI ([@Ayataaki](https://github.com/Ayataaki)) — Baseline & ML Pipeline
-- Data ingestion & synthetic data generation (Google Borg Cluster Trace v3)
-- Statistical diagnostics (ADF, KPSS, STL decomposition)
-- Feature engineering (lags, rolling stats, calendar features, Fourier)
-- Baseline models: Naive, Seasonal Naive, Holt-Winters
-- XGBoost multi-step direct forecaster with Optuna hyperparameter tuning
-- Transformer models: Informer, Autoformer, PatchTST (via NeuralForecast)
-- FastAPI predictive auto-scaling REST API (`/predict`, `/scaling-decision`)
-- Model comparison pipeline & results visualization
-
-### Fatima-Ezzahrae LEMTOUGUI ([@mtgfz](https://github.com/mtgfz)) — Deep Learning & Monitoring
-- Custom DL architectures from scratch (PyTorch):
-  - **LSTM (Bidirectional + Attention)**: sequential memory with focus mechanism
-  - **N-BEATS**: interpretable trend+seasonality decomposition blocks
-  - **TiDE (Google 2023)**: dense encoder-decoder with skip connections
-- Full training pipeline: early stopping, cosine annealing, Huber loss
-- DL benchmark: N-BEATS achieves **RMSE=0.030**, beating all baselines (−44%)
-- **Streamlit** interactive dashboard: live CPU forecasting + auto-scaling simulation
-- **Prometheus** metrics exporter: `aiops_cpu_actual`, `aiops_cpu_predicted`, `aiops_scale_out_alert`
-- **Grafana** live monitoring dashboard: CPU actual vs predicted, scale-out alerts, MAE tracker
-- Jupyter notebook: end-to-end pipeline with STL decomposition, benchmark charts, auto-scaling simulation
+Fatima-Ezzahrae LEMTOUGUI & Aya TAKI
